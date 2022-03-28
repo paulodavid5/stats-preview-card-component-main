@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Desktop */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container .card.desktop {
+  display: initial;
+}
+
+.container .mobile {
+  display: none;
+}
+
+.container .card.desktop {
+  max-width: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1b1938;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  margin: 5%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.container .card.desktop .img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #aa5cdb;
+  border-radius: 0rem 0.5rem 0.5rem 0;
+}
+
+.container .card.desktop .img .desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+  border-radius: 0rem 0.5rem 0.5rem 0;
+}
+
+.container .card.desktop .content {
+  width: 50%;
+  padding-right: 1vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.container .card.desktop .content .heading {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: left;
+  padding: 5rem 3rem 0 3rem;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.container .card.desktop .content .heading span {
+  color: #aa5cdb;
+}
+
+.container .card.desktop .content .text {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: left;
+  padding: 0.8rem 3rem 0 3rem;
+}
+
+.container .card.desktop .content .card_details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 3rem 0 3rem;
+  padding-bottom: 2rem;
+  gap: 25%;
+}
+
+.container .card.desktop .content .card_details h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.container .card.desktop .content .card_details P {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 992px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .container .card.desktop {
+    display: none;
+  }
+  .container .card {
+    background-color: #1b1938;
+    width: 18rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 0.5rem;
+  }
+  .container .card .img {
+    width: 100%;
+    background: #aa5cdb;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .container .card .img .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.5;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .container .card .heading {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+  .container .card .heading span {
+    color: #aa5cdb;
+  }
+  .container .card .text {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: center;
+    padding: 0.5rem 1.3rem;
+  }
+  .container .card .card_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .container .card .card_details h2 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .container .card .card_details P {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 0.3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
